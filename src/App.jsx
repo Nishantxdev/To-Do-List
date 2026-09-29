@@ -111,7 +111,7 @@ function App() {
           </div>
         </div>
 
-        <input className='my-4' onChange={toggleFinished} type="checkbox" checked={showfinished} /> Show Finished
+        <input className='my-4 cursor-pointer' onChange={toggleFinished} type="checkbox" checked={showfinished} /> Show Finished
         <hr className='my-2' />
 
         <h2 className='text-2xl font-bold'>Your Todos</h2>
@@ -129,7 +129,7 @@ function App() {
 
               <div className='flex gap-5 '>
 
-                <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} />
+                <input className='cursor-pointer' name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} />
 
                 <div className={item.isCompleted ? "line-through" : ""}>
                   {item.todo}
